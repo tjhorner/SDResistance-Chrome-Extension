@@ -1,0 +1,264 @@
+/* Plexts (Activity Feed) */
+#comm {
+  bottom: -55px;
+  font-size: 13px;
+  left: -5px;
+  position: absolute;
+  width: 50%;
+  /* Needs to be higher than separator_left_arm */
+  z-index: 2;
+}
+
+#pl_header_tab {
+  display: table;
+  height: 23px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.pl_header_part {
+  display: table-cell;
+}
+
+#pl_header_1 {
+  background: no-repeat url(../img/comm_tab1.png);
+  width: 4px;
+}
+
+#pl_header_2 {
+  background: repeat-x url(../img/comm_tab2.png);
+  width: 100px;
+}
+
+#pl_header_3 {
+  background: no-repeat url(../img/comm_tab3.png);
+  width: 19px;
+}
+
+#pl_header_4 {
+  background: repeat-x url(../img/comm_tab4.png);
+}
+
+#pl_header_5 {
+  background: no-repeat url(../img/comm_tab5.png);
+  width: 6px;
+}
+
+#plext_primary_title {
+  color: #ebbc4a;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.comm_expanded .SPRITE_chevron_down,
+.SPRITE_chevron {
+  display: inline-block;
+  margin: 3px;
+}
+
+.comm_expanded .SPRITE_chevron,
+.SPRITE_chevron_down {
+  display: none;
+}
+
+#plext_tab_group_container {
+  margin-right: -2px;
+  position: absolute;
+  right: 0;
+  top: 19px;
+  z-index: 1;
+}
+
+.plext_tab_title {
+  background-color: rgb(0, 79, 74);
+  border: 1px solid #59fbea;
+  color: #59fbea;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 5px;
+  text-align: center;
+  width: 80px;
+}
+
+.plext_tab_title.tab_selected {
+  background-color: rgb(16, 32, 35);
+  background-color: rgba(16, 32, 35, 0.9);
+  border: 1px solid #ebbc4a;
+  color: #ebbc4a;
+  cursor: default;
+}
+
+#plext_viewport_restrict_checkbox_container {
+  background-color: rgb(16, 32, 35);
+  background-color: rgba(16, 32, 35, 0.9);
+  box-shadow: 0 0 10px 2px rgba(16, 32, 35, 0.9);
+  -moz-box-shadow: 0 0 10px 2px rgba(16, 32, 35, 0.9);
+  -o-box-shadow: 0 0 10px 2px rgba(16, 32, 35, 0.9);
+  -webkit-box-shadow: 0 0 10px 2px rgba(16, 32, 35, 0.9);
+  position: absolute;
+  right: 16px;
+  top: 48px;
+  z-index: 1;
+}
+
+#pl_checkbox_text {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+#plexts {
+  padding: 5px;
+}
+
+#pl_status {
+  display: inline-block;
+  height: 25px;
+}
+
+#pl_spinner {
+  margin-left: 22px;
+  margin-top: 2px;
+}
+
+.img_progress {
+  display: inline-block;
+  height: 20px;
+  margin-top: 2px;
+  width: 20px;
+}
+
+.pl_status_text {
+  color: #ebbc4a;
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+#plext_container {
+  border: 1px solid #59fbea;
+  background-color: rgb(16, 32, 35);
+  background-color: rgba(16, 32, 35, 0.9);
+  height: 80px;
+  margin-top: -1px;
+  overflow-y: scroll;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.comm_expanded #plext_container {
+  height: 460px;
+}
+
+.plext {
+  display: table-row;
+  -webkit-transform: translateZ(0px);
+}
+
+.pl_timestamp {
+  color: rgb(214, 254, 250);
+  color: rgba(214, 254, 250, 0.5);
+  display: table-cell;
+  font-size: 12px;
+  text-align: center;
+  width: 60px;
+}
+
+.pl_nudge_timestamp {
+  display: table-cell;
+  padding-bottom: 4px;
+  width: 60px;
+}
+
+.pl_timestamp_container {
+  left: 0;
+  position: relative;
+  top: 5px;
+  width: 54px;
+}
+
+.pl_timestamp_date {
+  display: inline-block;
+  float: left;
+  width: 48px;
+  position: relative;
+  left: 0;
+  text-align: center;
+}
+
+.pl_nudge_date {
+  background-color: #724510;
+  border-left: 1px solid #ffd652;
+  border-bottom: 1px solid #ffd652;
+  border-top: 1px solid #ffd652;
+  color: #ffd652;
+  display: inline-block;
+  float: left;
+  font-size: 12px;
+  height: 18px;
+  text-align: center;
+  width: 48px;
+}
+
+.pl_nudge_pointy_spacer {
+  background: no-repeat url(//commondatastorage.googleapis.com/ingress.com/img/nudge_pointy.png);
+  display: inline-block;
+  float: left;
+  height: 20px;
+  left: 47px;
+  width: 5px;
+}
+
+.pl_timestamp_spacer {
+  display: inline-block;
+  float: left;
+  height: 20px;
+  left: 47px;
+  width: 5px;
+}
+
+.pl_nudge_player {
+  cursor: pointer;
+}
+
+.pl_nudge_me {
+  color: #ffd652;
+}
+
+.pl_content {
+  display: table-cell;
+  line-height: 16px;
+  padding: 3px 5px;
+}
+
+.pl_broad {
+  color: #00bab5;
+}
+
+.pl_narrow {
+  color: #d8ad4c;
+}
+
+.pl_player {
+  color: #cfe5e5;
+}
+
+.pl_portal_name {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.pl_broad .pl_portal_address {
+  color: #008780;
+  cursor: pointer;
+}
+
+.pl_narrow .pl_portal_address {
+  color: #a5823c;
+  cursor: pointer;
+}
+
+.pl_secure {
+  color: #ff5555;
+}
