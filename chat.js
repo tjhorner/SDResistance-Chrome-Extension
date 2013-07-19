@@ -29,5 +29,6 @@ function clickHandler(e){
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#exitButton').addEventListener('click', clickHandler);
+ 	document.querySelector('#exitButton').addEventListener('click', clickHandler);
+	$('body').slideDown();
 });
